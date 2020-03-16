@@ -11,9 +11,12 @@ import CoreData
 
 protocol CoreDataStoraable {
     var context: NSManagedObjectContext { get }
+    func fetchTemples(id: String) -> [Temple]
+    func fetchImages(id: String) -> [Images]
 }
 
 public class DataStorage: CoreDataStoraable {
+   
     // MARK: - Core Data stack
     
     var context: NSManagedObjectContext {
@@ -44,34 +47,38 @@ public class DataStorage: CoreDataStoraable {
         }
     }
     
+    // MARK: - Core Data Interactions
     
-    //TODO clean up these to egenerics
-    func fetch(id: String = "") -> [Temple] {
-        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Temple")
-        if id != "" {
-            fetchRequest.predicate = NSPredicate(format: "id == %@", id as CVarArg)
-        }
-        fetchRequest.fetchLimit = 1
+    func fetchTemples(id: String) -> [Temple] {
         var temples: [Temple] = []
         do {
-            let test = try context.fetch(fetchRequest)
-            temples.append(contentsOf: test as! [Temple])
+            let result = try context.fetch(Temple.request(id))
+            temples.append(contentsOf: result as! [Temple])
         } catch {
             print(error)
         }
         return temples
     }
     
-    func deleteAll () {
+    func fetchImages(id: String) -> [Images] {
+        var images: [Images] = []
+        do {
+            let result = try context.fetch(Temple.request(id))
+            images.append(contentsOf: result as! [Images])
+        } catch {
+            print(error)
+        }
+        return images
+    }
+    
+    func nuke() {
         deleteAllTemples()
         deleteAllImages()
     }
     
     private func deleteAllTemples() {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Temple")
-        fetchRequest.returnsObjectsAsFaults = false
         do {
-            let results = try context.fetch(fetchRequest)
+            let results = try context.fetch(Temple.request(""))
             for object in results {
                 guard let objectData = object as? NSManagedObject else {continue}
                 context.delete(objectData)
@@ -82,10 +89,8 @@ public class DataStorage: CoreDataStoraable {
     }
     
     private func deleteAllImages() {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Images")
-        fetchRequest.returnsObjectsAsFaults = false
         do {
-            let results = try context.fetch(fetchRequest)
+            let results = try context.fetch(Images.request(""))
             for object in results {
                 guard let objectData = object as? NSManagedObject else {continue}
                 context.delete(objectData)

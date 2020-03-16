@@ -18,6 +18,9 @@
 		F04B9041241FB4E400B2BAAA /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9040241FB4E400B2BAAA /* DataStorage.swift */; };
 		F04B9043241FB5B800B2BAAA /* StorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9042241FB5B800B2BAAA /* StorageTest.swift */; };
 		F04B9046241FB79F00B2BAAA /* Temple+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9045241FB79F00B2BAAA /* Temple+Extensions.swift */; };
+		F04B904A241FC74100B2BAAA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9049241FC74100B2BAAA /* NetworkManager.swift */; };
+		F04B904C241FCA5200B2BAAA /* Images+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B904B241FCA5200B2BAAA /* Images+Extensions.swift */; };
+		F04B904E241FD05400B2BAAA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B904D241FD05400B2BAAA /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		F04B9040241FB4E400B2BAAA /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		F04B9042241FB5B800B2BAAA /* StorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTest.swift; sourceTree = "<group>"; };
 		F04B9045241FB79F00B2BAAA /* Temple+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temple+Extensions.swift"; sourceTree = "<group>"; };
+		F04B9049241FC74100B2BAAA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F04B904B241FCA5200B2BAAA /* Images+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Extensions.swift"; sourceTree = "<group>"; };
+		F04B904D241FD05400B2BAAA /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				F04B9040241FB4E400B2BAAA /* DataStorage.swift */,
+				F04B9049241FC74100B2BAAA /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -156,7 +163,9 @@
 		F04B903D241FAF2000B2BAAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F04B904D241FD05400B2BAAA /* DataModel.swift */,
 				F04B9045241FB79F00B2BAAA /* Temple+Extensions.swift */,
+				F04B904B241FCA5200B2BAAA /* Images+Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,8 +289,11 @@
 				F04B9017241FAE8500B2BAAA /* SceneDelegate.swift in Sources */,
 				F04B9046241FB79F00B2BAAA /* Temple+Extensions.swift in Sources */,
 				F04B9041241FB4E400B2BAAA /* DataStorage.swift in Sources */,
+				F04B904A241FC74100B2BAAA /* NetworkManager.swift in Sources */,
+				F04B904C241FCA5200B2BAAA /* Images+Extensions.swift in Sources */,
 				F04B901C241FAE8500B2BAAA /* ContentView.swift in Sources */,
 				F04B901A241FAE8500B2BAAA /* Costanza.xcdatamodeld in Sources */,
+				F04B904E241FD05400B2BAAA /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

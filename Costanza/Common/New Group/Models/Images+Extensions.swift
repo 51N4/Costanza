@@ -1,12 +1,12 @@
 //
-//  Temple+Extensions.swift
+//  Images.swift
 //  Costanza
 //
 //  Created by m4m4 on 16.03.20.
 //  Copyright © 2020 mainvolume. All rights reserved.
 //
 
-import CoreData
+import Foundation
 
-extension Temple: Identifiable {}
-extension Temple: DataModel {}
+extension Images: Identifiable {}
+extension Images: DataModel {}
