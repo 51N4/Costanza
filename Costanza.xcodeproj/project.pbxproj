@@ -15,6 +15,7 @@
 		F04B9021241FAE8700B2BAAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04B9020241FAE8700B2BAAA /* Preview Assets.xcassets */; };
 		F04B9024241FAE8700B2BAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04B9022241FAE8700B2BAAA /* LaunchScreen.storyboard */; };
 		F04B902F241FAE8700B2BAAA /* CostanzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */; };
+		F04B9041241FB4E400B2BAAA /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9040241FB4E400B2BAAA /* DataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F04B902A241FAE8700B2BAAA /* CostanzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CostanzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostanzaTests.swift; sourceTree = "<group>"; };
 		F04B9030241FAE8700B2BAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04B9040241FB4E400B2BAAA /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +116,57 @@
 		F04B9039241FAEB800B2BAAA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F04B903A241FAF0F00B2BAAA /* New Group */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		F04B903A241FAF0F00B2BAAA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F04B903F241FAF3200B2BAAA /* Storage */,
+				F04B903E241FAF2B00B2BAAA /* Extensions */,
+				F04B903D241FAF2000B2BAAA /* Models */,
+				F04B903C241FAF1B00B2BAAA /* Managers */,
+				F04B903B241FAF1300B2BAAA /* Centers */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F04B903B241FAF1300B2BAAA /* Centers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Centers;
+			sourceTree = "<group>";
+		};
+		F04B903C241FAF1B00B2BAAA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F04B9040241FB4E400B2BAAA /* DataStorage.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F04B903D241FAF2000B2BAAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F04B903E241FAF2B00B2BAAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F04B903F241FAF3200B2BAAA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +272,7 @@
 			files = (
 				F04B9015241FAE8500B2BAAA /* AppDelegate.swift in Sources */,
 				F04B9017241FAE8500B2BAAA /* SceneDelegate.swift in Sources */,
+				F04B9041241FB4E400B2BAAA /* DataStorage.swift in Sources */,
 				F04B901C241FAE8500B2BAAA /* ContentView.swift in Sources */,
 				F04B901A241FAE8500B2BAAA /* Costanza.xcdatamodeld in Sources */,
 			);

@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Images" representedClassName="Images" syncable="YES" codeGenerationType="class">
+        <attribute name="data" attributeType="Binary"/>
+        <attribute name="id" attributeType="String"/>
+        <relationship name="temple" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Temple" inverseName="templeImage" inverseEntity="Temple"/>
+    </entity>
+    <entity name="Temple" representedClassName="Temple" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="lat" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lon" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="templeImage" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Images" inverseName="temple" inverseEntity="Images"/>
+    </entity>
+    <elements>
+        <element name="Temple" positionX="-45" positionY="-45" width="128" height="148"/>
+        <element name="Images" positionX="280.90625" positionY="-29.85546875" width="128" height="88"/>
+    </elements>
 </model>
