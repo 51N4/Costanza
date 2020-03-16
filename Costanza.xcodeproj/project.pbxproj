@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F04B9015241FAE8500B2BAAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9014241FAE8500B2BAAA /* AppDelegate.swift */; };
+		F04B9017241FAE8500B2BAAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9016241FAE8500B2BAAA /* SceneDelegate.swift */; };
+		F04B901A241FAE8500B2BAAA /* Costanza.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F04B9018241FAE8500B2BAAA /* Costanza.xcdatamodeld */; };
+		F04B901C241FAE8500B2BAAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B901B241FAE8500B2BAAA /* ContentView.swift */; };
+		F04B901E241FAE8700B2BAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04B901D241FAE8700B2BAAA /* Assets.xcassets */; };
+		F04B9021241FAE8700B2BAAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F04B9020241FAE8700B2BAAA /* Preview Assets.xcassets */; };
+		F04B9024241FAE8700B2BAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04B9022241FAE8700B2BAAA /* LaunchScreen.storyboard */; };
+		F04B902F241FAE8700B2BAAA /* CostanzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F04B902B241FAE8700B2BAAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F04B9009241FAE8500B2BAAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04B9010241FAE8500B2BAAA;
+			remoteInfo = Costanza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F04B9011241FAE8500B2BAAA /* Costanza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Costanza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04B9014241FAE8500B2BAAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F04B9016241FAE8500B2BAAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F04B9019241FAE8500B2BAAA /* Costanza.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Costanza.xcdatamodel; sourceTree = "<group>"; };
+		F04B901B241FAE8500B2BAAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F04B901D241FAE8700B2BAAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F04B9020241FAE8700B2BAAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F04B9023241FAE8700B2BAAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F04B9025241FAE8700B2BAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04B902A241FAE8700B2BAAA /* CostanzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CostanzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostanzaTests.swift; sourceTree = "<group>"; };
+		F04B9030241FAE8700B2BAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F04B900E241FAE8500B2BAAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04B9027241FAE8700B2BAAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F04B9008241FAE8500B2BAAA = {
+			isa = PBXGroup;
+			children = (
+				F04B9013241FAE8500B2BAAA /* Costanza */,
+				F04B902D241FAE8700B2BAAA /* CostanzaTests */,
+				F04B9012241FAE8500B2BAAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F04B9012241FAE8500B2BAAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F04B9011241FAE8500B2BAAA /* Costanza.app */,
+				F04B902A241FAE8700B2BAAA /* CostanzaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F04B9013241FAE8500B2BAAA /* Costanza */ = {
+			isa = PBXGroup;
+			children = (
+				F04B9014241FAE8500B2BAAA /* AppDelegate.swift */,
+				F04B9016241FAE8500B2BAAA /* SceneDelegate.swift */,
+				F04B901B241FAE8500B2BAAA /* ContentView.swift */,
+				F04B901D241FAE8700B2BAAA /* Assets.xcassets */,
+				F04B9022241FAE8700B2BAAA /* LaunchScreen.storyboard */,
+				F04B9025241FAE8700B2BAAA /* Info.plist */,
+				F04B9018241FAE8500B2BAAA /* Costanza.xcdatamodeld */,
+				F04B901F241FAE8700B2BAAA /* Preview Content */,
+			);
+			path = Costanza;
+			sourceTree = "<group>";
+		};
+		F04B901F241FAE8700B2BAAA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F04B9020241FAE8700B2BAAA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F04B902D241FAE8700B2BAAA /* CostanzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */,
+				F04B9030241FAE8700B2BAAA /* Info.plist */,
+			);
+			path = CostanzaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F04B9010241FAE8500B2BAAA /* Costanza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F04B9033241FAE8700B2BAAA /* Build configuration list for PBXNativeTarget "Costanza" */;
+			buildPhases = (
+				F04B900D241FAE8500B2BAAA /* Sources */,
+				F04B900E241FAE8500B2BAAA /* Frameworks */,
+				F04B900F241FAE8500B2BAAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Costanza;
+			productName = Costanza;
+			productReference = F04B9011241FAE8500B2BAAA /* Costanza.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F04B9029241FAE8700B2BAAA /* CostanzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F04B9036241FAE8700B2BAAA /* Build configuration list for PBXNativeTarget "CostanzaTests" */;
+			buildPhases = (
+				F04B9026241FAE8700B2BAAA /* Sources */,
+				F04B9027241FAE8700B2BAAA /* Frameworks */,
+				F04B9028241FAE8700B2BAAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F04B902C241FAE8700B2BAAA /* PBXTargetDependency */,
+			);
+			name = CostanzaTests;
+			productName = CostanzaTests;
+			productReference = F04B902A241FAE8700B2BAAA /* CostanzaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F04B9009241FAE8500B2BAAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = mainvolume;
+				TargetAttributes = {
+					F04B9010241FAE8500B2BAAA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F04B9029241FAE8700B2BAAA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F04B9010241FAE8500B2BAAA;
+					};
+				};
+			};
+			buildConfigurationList = F04B900C241FAE8500B2BAAA /* Build configuration list for PBXProject "Costanza" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F04B9008241FAE8500B2BAAA;
+			productRefGroup = F04B9012241FAE8500B2BAAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F04B9010241FAE8500B2BAAA /* Costanza */,
+				F04B9029241FAE8700B2BAAA /* CostanzaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F04B900F241FAE8500B2BAAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04B9024241FAE8700B2BAAA /* LaunchScreen.storyboard in Resources */,
+				F04B9021241FAE8700B2BAAA /* Preview Assets.xcassets in Resources */,
+				F04B901E241FAE8700B2BAAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04B9028241FAE8700B2BAAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F04B900D241FAE8500B2BAAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04B9015241FAE8500B2BAAA /* AppDelegate.swift in Sources */,
+				F04B9017241FAE8500B2BAAA /* SceneDelegate.swift in Sources */,
+				F04B901C241FAE8500B2BAAA /* ContentView.swift in Sources */,
+				F04B901A241FAE8500B2BAAA /* Costanza.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F04B9026241FAE8700B2BAAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04B902F241FAE8700B2BAAA /* CostanzaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F04B902C241FAE8700B2BAAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F04B9010241FAE8500B2BAAA /* Costanza */;
+			targetProxy = F04B902B241FAE8700B2BAAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F04B9022241FAE8700B2BAAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F04B9023241FAE8700B2BAAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F04B9031241FAE8700B2BAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F04B9032241FAE8700B2BAAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F04B9034241FAE8700B2BAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Costanza/Preview Content\"";
+				DEVELOPMENT_TEAM = Z46HY8GH2Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Costanza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.Costanza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F04B9035241FAE8700B2BAAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Costanza/Preview Content\"";
+				DEVELOPMENT_TEAM = Z46HY8GH2Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Costanza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.Costanza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F04B9037241FAE8700B2BAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z46HY8GH2Z;
+				INFOPLIST_FILE = CostanzaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.CostanzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Costanza.app/Costanza";
+			};
+			name = Debug;
+		};
+		F04B9038241FAE8700B2BAAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z46HY8GH2Z;
+				INFOPLIST_FILE = CostanzaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.CostanzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Costanza.app/Costanza";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F04B900C241FAE8500B2BAAA /* Build configuration list for PBXProject "Costanza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04B9031241FAE8700B2BAAA /* Debug */,
+				F04B9032241FAE8700B2BAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F04B9033241FAE8700B2BAAA /* Build configuration list for PBXNativeTarget "Costanza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04B9034241FAE8700B2BAAA /* Debug */,
+				F04B9035241FAE8700B2BAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F04B9036241FAE8700B2BAAA /* Build configuration list for PBXNativeTarget "CostanzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04B9037241FAE8700B2BAAA /* Debug */,
+				F04B9038241FAE8700B2BAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F04B9018241FAE8500B2BAAA /* Costanza.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F04B9019241FAE8500B2BAAA /* Costanza.xcdatamodel */,
+			);
+			currentVersion = F04B9019241FAE8500B2BAAA /* Costanza.xcdatamodel */;
+			path = Costanza.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F04B9009241FAE8500B2BAAA /* Project object */;
+}
