@@ -6,6 +6,7 @@
         <relationship name="temple" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Temple" inverseName="templeImage" inverseEntity="Temple"/>
     </entity>
     <entity name="Temple" representedClassName="Temple" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="606058080" usesScalarValueType="NO"/>
         <attribute name="desc" attributeType="String"/>
         <attribute name="id" attributeType="String"/>
         <attribute name="imageURL" optional="YES" attributeType="String"/>
@@ -15,7 +16,7 @@
         <relationship name="templeImage" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Images" inverseName="temple" inverseEntity="Images"/>
     </entity>
     <elements>
-        <element name="Temple" positionX="-45" positionY="-45" width="128" height="148"/>
+        <element name="Temple" positionX="-45" positionY="-45" width="128" height="163"/>
         <element name="Images" positionX="280.90625" positionY="-29.85546875" width="128" height="88"/>
     </elements>
 </model>

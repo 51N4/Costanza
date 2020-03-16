@@ -16,6 +16,8 @@
 		F04B9024241FAE8700B2BAAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04B9022241FAE8700B2BAAA /* LaunchScreen.storyboard */; };
 		F04B902F241FAE8700B2BAAA /* CostanzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */; };
 		F04B9041241FB4E400B2BAAA /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9040241FB4E400B2BAAA /* DataStorage.swift */; };
+		F04B9043241FB5B800B2BAAA /* StorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9042241FB5B800B2BAAA /* StorageTest.swift */; };
+		F04B9046241FB79F00B2BAAA /* Temple+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9045241FB79F00B2BAAA /* Temple+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostanzaTests.swift; sourceTree = "<group>"; };
 		F04B9030241FAE8700B2BAAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04B9040241FB4E400B2BAAA /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		F04B9042241FB5B800B2BAAA /* StorageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTest.swift; sourceTree = "<group>"; };
+		F04B9045241FB79F00B2BAAA /* Temple+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temple+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F04B902E241FAE8700B2BAAA /* CostanzaTests.swift */,
+				F04B9042241FB5B800B2BAAA /* StorageTest.swift */,
 				F04B9030241FAE8700B2BAAA /* Info.plist */,
 			);
 			path = CostanzaTests;
@@ -151,6 +156,7 @@
 		F04B903D241FAF2000B2BAAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F04B9045241FB79F00B2BAAA /* Temple+Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			files = (
 				F04B9015241FAE8500B2BAAA /* AppDelegate.swift in Sources */,
 				F04B9017241FAE8500B2BAAA /* SceneDelegate.swift in Sources */,
+				F04B9046241FB79F00B2BAAA /* Temple+Extensions.swift in Sources */,
 				F04B9041241FB4E400B2BAAA /* DataStorage.swift in Sources */,
 				F04B901C241FAE8500B2BAAA /* ContentView.swift in Sources */,
 				F04B901A241FAE8500B2BAAA /* Costanza.xcdatamodeld in Sources */,
@@ -283,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04B902F241FAE8700B2BAAA /* CostanzaTests.swift in Sources */,
+				F04B9043241FB5B800B2BAAA /* StorageTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
