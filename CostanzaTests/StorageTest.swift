@@ -16,13 +16,10 @@ class StorageTest: XCTestCase {
     let storage = DataStorage()
     
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-       
-        
+       // storage.nuke()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         storage.nuke()
     }
     
@@ -47,7 +44,7 @@ class StorageTest: XCTestCase {
             XCTFail()
         }
         
-        let temples = storage.fetch(temples: temple.id!)
+        let temples = storage.fetchTemples(id: temple.id!)
         XCTAssert(temples.count > 0)
     }
     
@@ -65,10 +62,7 @@ class StorageTest: XCTestCase {
             XCTFail()
         }
         
-        let images = storage.fetch(images: "Disco")
-        XCTAssert(images.count == 0)
-        
-        let imagesTrue = storage.fetch(images: image.templeID!)
+        let imagesTrue = storage.fetchImages(templeID: image.templeID!)
         XCTAssert(imagesTrue.count > 0)
     }
     
