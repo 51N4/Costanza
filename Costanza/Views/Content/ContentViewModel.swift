@@ -10,26 +10,41 @@ import Foundation
 import SwiftUI
 import CoreData
 
-protocol ViewModel {
-    associatedtype T: CostanzaStoraable
-    var storage: T { get }
-    var id: Int { get set }
+public protocol ViewModel {
+    associatedtype T : NSManagedObject
+    func create( context: NSManagedObjectContext)
+    func delete(offsets:IndexSet,
+                items: FetchedResults<T>,
+                context: NSManagedObjectContext)
 }
 
 class ContentViewModel: ViewModel, ObservableObject {
     
-    var storage: DataStorage
-    @Published var id: Int = 0
     
-    @FetchRequest(
-        entity: Temple.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \Temple.date, ascending: false)]
-    ) var temples: FetchedResults<Temple>
-  
-    
-
-    init(storage: DataStorage) {
-        self.storage = storage
+    func create( context: NSManagedObjectContext) {
+        
+        let temple = Temple(context: context)
+        
+        temple.id = UUID().description
+        temple.lat = 42.00
+        temple.lon = 42.00
+        temple.date = Date()
+        temple.desc = "Core Data Temple Test"
+        temple.imageURL = "local"
+        temple.name = "T Test - \(Date())"
+        
+        try? context.save()
     }
     
+    func delete(offsets:IndexSet,
+                items: FetchedResults<Temple>,
+                context: NSManagedObjectContext) {
+        
+        for index in offsets {
+            let x = items[index]
+            context.delete(x)
+        }
+        
+        try? context.save()
+    }
 }

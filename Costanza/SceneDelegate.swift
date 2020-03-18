@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
        
-        let context = storage.persistentContainer.viewContext
+        let context = storage.context
 
         let contentView = ContentView()
             .environment(\.managedObjectContext, context)
