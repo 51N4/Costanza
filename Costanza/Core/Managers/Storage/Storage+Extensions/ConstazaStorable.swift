@@ -12,26 +12,27 @@ import CoreData
 
 protocol CostanzaStoraable {
     var context: NSManagedObjectContext { get }
-    func fetchTemples(id: String) -> [Temple]
-    func fetchImages(templeID: String) -> [Images]
-    func nukeTemple(id: String)
-    func nukeImage(templeID: String)
+    func fetchTemples(_ id: String?) -> [Temple]
+    func fetchImages(_ templeID: String?) -> [Images]
+    func nukeTemple(_ id: String?)
+    func nukeImage(_ templeID: String?)
     func nukeAll()
 }
 
 
 // MARK: - CostanzaStoraable
 extension DataStorage: CostanzaStoraable {
+    
     // MARK: - Core Data Interactions
     
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
     
-    func fetchTemples(id: String) -> [Temple] {
+    func fetchTemples(_ id: String?) -> [Temple] {
         var temples: [Temple] = []
         do {
-            let result = try context.fetch(Temple.request(id))
+            let result = try context.fetch(Temple.request(id ?? ""))
             temples.append(contentsOf: result as! [Temple])
         } catch {
             print(error)
@@ -39,10 +40,10 @@ extension DataStorage: CostanzaStoraable {
         return temples
     }
     
-    func fetchImages(templeID: String) -> [Images] {
+    func fetchImages(_ templeID: String?) -> [Images] {
         var images: [Images] = []
         do {
-            let result = try context.fetch(Images.request(templeID))
+            let result = try context.fetch(Images.request(templeID ?? ""))
             images.append(contentsOf: result as! [Images])
         } catch {
             print(error)
@@ -50,21 +51,21 @@ extension DataStorage: CostanzaStoraable {
         return images
     }
     
-    func nukeTemple(id: String) {
-        deleteTemples(id: "")
+    func nukeTemple(_ id: String?) {
+        deleteTemples(id ?? "")
     }
     
-    func nukeImage(templeID: String) {
-        deleteImages(templeID: "")
+    func nukeImage(_ templeID: String?) {
+        deleteImages(templeID ?? "")
     }
     
     func nukeAll() {
-        deleteTemples(id: "")
-        deleteImages(templeID: "")
+        deleteTemples("")
+        deleteImages("")
     }
     
     // MARK: - Core Data Privates
-    private func deleteTemples(id: String) {
+    private func deleteTemples(_ id: String) {
         do {
             let results = try context.fetch(Temple.request(id))
             for object in results {
@@ -76,7 +77,7 @@ extension DataStorage: CostanzaStoraable {
         }
     }
     
-    private func deleteImages(templeID: String) {
+    private func deleteImages(_ templeID: String) {
         do {
             let results = try context.fetch(Images.request(templeID))
             for object in results {

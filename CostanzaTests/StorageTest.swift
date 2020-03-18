@@ -20,7 +20,7 @@ class StorageTest: XCTestCase {
     }
     
     override func tearDown() {
-        storage.nuke()
+        storage.nukeAll()
     }
     
     
@@ -29,7 +29,7 @@ class StorageTest: XCTestCase {
         let temple = Temple(context: storage.context)
         
         
-        temple.id = UUID().description
+        temple.id = "Local Temple"//UUID().description
         temple.lat = 42.00
         temple.lon = 42.00
         temple.date = Date()
@@ -44,7 +44,7 @@ class StorageTest: XCTestCase {
             XCTFail()
         }
         
-        let temples = storage.fetchTemples(id: temple.id!)
+        let temples = storage.fetchTemples(temple.id!)
         XCTAssert(temples.count > 0)
     }
     
@@ -62,7 +62,7 @@ class StorageTest: XCTestCase {
             XCTFail()
         }
         
-        let imagesTrue = storage.fetchImages(templeID: image.templeID!)
+        let imagesTrue = storage.fetchImages(image.templeID!)
         XCTAssert(imagesTrue.count > 0)
     }
     
