@@ -20,6 +20,12 @@ public protocol ViewModel {
 
 class ContentViewModel: ViewModel, ObservableObject {
     
+    @Environment(\.managedObjectContext) var context
+    
+    @FetchRequest(
+        entity: Temple.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Temple.date, ascending: true)]
+    ) var temples: FetchedResults<Temple>
     
     func create( context: NSManagedObjectContext) {
         
