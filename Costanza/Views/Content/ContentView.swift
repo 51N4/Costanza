@@ -13,18 +13,13 @@ struct ContentView: View {
    
     @Environment(\.managedObjectContext) var context
     
-    @FetchRequest(
-        entity: Temple.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \Temple.date, ascending: true)]
-    ) var temples: FetchedResults<Temple>
+    @State private var currentStep: ContentViewStep = .initial
     
-    let model: ContentViewModel = ContentViewModel()
-
     var body: some View {
-        HStack {
-            if model.currentStep == .initial {
-                TempleView(model: TempleViewModel(temples: temples, context: context))
-            }
+        VStack {
+            if currentStep == .initial {
+                TempleView(model: TempleViewModel(context: context), state: $currentStep)
+            } 
         }
     }
 }

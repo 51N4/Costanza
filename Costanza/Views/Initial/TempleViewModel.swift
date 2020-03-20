@@ -11,40 +11,37 @@ import SwiftUI
 import CoreData
 
 
-class TempleViewModel:StorableViewModel {
+class TempleViewModel:StorableViewModel, ObservableObject {
     
-    var temples: FetchedResults<Temple>
     var context: NSManagedObjectContext
-    
-    var currentTemple:Temple?
-    
-    init(temples:FetchedResults<Temple>, context: NSManagedObjectContext) {
-        self.temples = temples
+
+    init( context: NSManagedObjectContext) {
         self.context = context
     }
     
-    func create() {
+    @discardableResult
+    func create() -> Temple {
         let temple = Temple(context: context)
         temple.id = UUID().description
         temple.date = Date()
-        currentTemple = temple
+        return temple
     }
     
-    func addName(name:String) {
-        currentTemple?.setValue(name, forKey: "name")
+    func addName(name:String, item: Temple) {
+        item.setValue(name, forKey: "name")
     }
     
-    func addDescription(description:String) {
-        currentTemple?.setValue(description, forKey: "desc")
+    func addDescription(description:String, item: Temple) {
+        item.setValue(description, forKey: "desc")
     }
     
-    func addImageUrl(imageUrl:String) {
-        currentTemple?.setValue(imageUrl, forKey: "imageUrl")
+    func addImageUrl(imageUrl:String, item:Temple) {
+        item.setValue(imageUrl, forKey: "imageUrl")
     }
     
-    func delete(offsets:IndexSet) {
+    func delete(offsets:IndexSet, items:FetchedResults<Temple>) {
         for index in offsets {
-            let x = temples[index]
+            let x = items[index]
             context.delete(x)
         }
         save()

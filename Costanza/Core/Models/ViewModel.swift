@@ -13,8 +13,10 @@ import SwiftUI
 public protocol ViewModel {}
 
 public protocol StorableViewModel: ViewModel {
+    associatedtype T : NSManagedObject
     var context: NSManagedObjectContext { get }
-    func create()
-    func delete(offsets:IndexSet)
+    func create() -> T
+    func delete(offsets:IndexSet,
+                items: FetchedResults<T>)
     func save()
 }

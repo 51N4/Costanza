@@ -27,11 +27,7 @@ class StorageTest: XCTestCase {
     func testStoreTemple() {
         
         let temple = Temple(context: storage.context)
-        
-        
-        temple.id = "Local Temple"//UUID().description
-        temple.lat = 42.00
-        temple.lon = 42.00
+        temple.id = UUID().description
         temple.date = Date()
         temple.desc = "Core Data Temple Test"
         temple.imageURL = "local"

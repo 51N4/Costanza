@@ -18,6 +18,4 @@ enum ContentViewStep {
     case describe
 }
 
-class ContentViewModel: ViewModel, ObservableObject {
-    @Published var currentStep: ContentViewStep = .initial
-}
+class ContentViewModel: ViewModel {}
