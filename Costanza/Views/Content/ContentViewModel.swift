@@ -30,10 +30,7 @@ class ContentViewModel: ViewModel, ObservableObject {
     func create( context: NSManagedObjectContext) {
         
         let temple = Temple(context: context)
-        
         temple.id = UUID().description
-        temple.lat = 42.00
-        temple.lon = 42.00
         temple.date = Date()
         temple.desc = "Core Data Temple Test"
         temple.imageURL = "local"

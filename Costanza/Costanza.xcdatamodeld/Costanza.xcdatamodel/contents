@@ -10,12 +10,10 @@
         <attribute name="desc" attributeType="String"/>
         <attribute name="id" attributeType="String"/>
         <attribute name="imageURL" optional="YES" attributeType="String"/>
-        <attribute name="lat" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="lon" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Temple" positionX="-45" positionY="-45" width="128" height="148"/>
         <element name="Images" positionX="-9" positionY="27" width="128" height="88"/>
+        <element name="Temple" positionX="-45" positionY="-45" width="128" height="118"/>
     </elements>
 </model>
