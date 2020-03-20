@@ -9,6 +9,12 @@
 import Foundation
 import CoreData
 
+extension NSManagedObject {
+    var context: NSManagedObjectContext? {
+        return managedObjectContext
+    }
+}
+
 public class DataStorage {
     
     // MARK: - Core Data stack

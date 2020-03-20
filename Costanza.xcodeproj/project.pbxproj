@@ -23,6 +23,10 @@
 		F04B904E241FD05400B2BAAA /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B904D241FD05400B2BAAA /* DataModel.swift */; };
 		F052FA892422197D00D6D058 /* ConstazaStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052FA882422197D00D6D058 /* ConstazaStorable.swift */; };
 		F053820324221EAF0046D564 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053820224221EAF0046D564 /* ContentViewModel.swift */; };
+		F070FBA62424F0C900E6C666 /* TempleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070FBA52424F0C900E6C666 /* TempleView.swift */; };
+		F070FBA82424F30800E6C666 /* TempleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070FBA72424F30800E6C666 /* TempleViewModel.swift */; };
+		F070FBAA2424F51400E6C666 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070FBA92424F51400E6C666 /* ViewModel.swift */; };
+		F070FBAE2424F9A900E6C666 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F070FBAD2424F9A900E6C666 /* CreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		F052FA882422197D00D6D058 /* ConstazaStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstazaStorable.swift; sourceTree = "<group>"; };
 		F052FA8C24221B9E00D6D058 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F053820224221EAF0046D564 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		F070FBA52424F0C900E6C666 /* TempleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleView.swift; sourceTree = "<group>"; };
+		F070FBA72424F30800E6C666 /* TempleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleViewModel.swift; sourceTree = "<group>"; };
+		F070FBA92424F51400E6C666 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F070FBAD2424F9A900E6C666 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,7 @@
 		F04B903D241FAF2000B2BAAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F070FBA92424F51400E6C666 /* ViewModel.swift */,
 				F04B904D241FD05400B2BAAA /* DataModel.swift */,
 				F052FA8A242219C600D6D058 /* Models+Extensions */,
 			);
@@ -200,10 +209,21 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
+		F070FBAB2424F81100E6C666 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				F070FBAD2424F9A900E6C666 /* CreateView.swift */,
+				F070FBA52424F0C900E6C666 /* TempleView.swift */,
+				F070FBA72424F30800E6C666 /* TempleViewModel.swift */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
 		F0BF76C124221DD900372467 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				F053820124221E990046D564 /* Content */,
+				F070FBAB2424F81100E6C666 /* Initial */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,12 +333,16 @@
 				F04B9017241FAE8500B2BAAA /* SceneDelegate.swift in Sources */,
 				F04B9046241FB79F00B2BAAA /* Temple+Extensions.swift in Sources */,
 				F04B9041241FB4E400B2BAAA /* DataStorage.swift in Sources */,
+				F070FBAE2424F9A900E6C666 /* CreateView.swift in Sources */,
 				F04B904A241FC74100B2BAAA /* NetworkManager.swift in Sources */,
 				F04B904C241FCA5200B2BAAA /* Images+Extensions.swift in Sources */,
+				F070FBAA2424F51400E6C666 /* ViewModel.swift in Sources */,
 				F052FA892422197D00D6D058 /* ConstazaStorable.swift in Sources */,
 				F04B901C241FAE8500B2BAAA /* ContentView.swift in Sources */,
 				F04B901A241FAE8500B2BAAA /* Costanza.xcdatamodeld in Sources */,
+				F070FBA62424F0C900E6C666 /* TempleView.swift in Sources */,
 				F053820324221EAF0046D564 /* ContentViewModel.swift in Sources */,
+				F070FBA82424F30800E6C666 /* TempleViewModel.swift in Sources */,
 				F04B904E241FD05400B2BAAA /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

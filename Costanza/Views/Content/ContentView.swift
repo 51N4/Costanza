@@ -9,7 +9,6 @@
 import SwiftUI
 
 
-
 struct ContentView: View {
    
     @Environment(\.managedObjectContext) var context
@@ -22,33 +21,10 @@ struct ContentView: View {
     let model: ContentViewModel = ContentViewModel()
 
     var body: some View {
-        VStack {
-            List {
-                ForEach(temples){ temple in
-                    TempleRow(temple: temple)
-                }.onDelete(perform: delete)
-            }.listStyle(GroupedListStyle())
-            HStack{
-                Button(action: {
-                    self.model.create(context: self.context)
-                }){
-                    Text("Add Temple")
-                }
-            }.frame(height: 42)
+        HStack {
+            if model.currentStep == .initial {
+                TempleView(model: TempleViewModel(temples: temples, context: context))
+            }
         }
-    }
-    
-    func delete(offsets:IndexSet) {
-        model.delete(offsets: offsets,
-                         items: temples,
-                         context: context)
-    }
-}
-
-struct TempleRow: View {
-    var temple: Temple
-    var body: some View {
-        Text(temple.name ?? "")
-            .frame(height:100)
     }
 }
