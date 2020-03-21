@@ -7,10 +7,10 @@
     </entity>
     <entity name="Temple" representedClassName="Temple" syncable="YES" codeGenerationType="class">
         <attribute name="date" attributeType="Date" defaultDateTimeInterval="606058080" usesScalarValueType="NO"/>
-        <attribute name="desc" attributeType="String"/>
+        <attribute name="desc" attributeType="String" defaultValueString="&quot;&quot;"/>
         <attribute name="id" attributeType="String"/>
-        <attribute name="imageURL" optional="YES" attributeType="String"/>
-        <attribute name="name" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" defaultValueString="&quot;&quot;"/>
+        <attribute name="name" attributeType="String" defaultValueString="&quot;&quot;"/>
     </entity>
     <elements>
         <element name="Images" positionX="-9" positionY="27" width="128" height="88"/>

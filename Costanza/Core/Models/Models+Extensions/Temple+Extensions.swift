@@ -10,4 +10,11 @@ import CoreData
 
 extension Temple: Identifiable {}
 
-extension Temple: DataModel {}
+extension Temple: DataModel {
+    class func create(context: NSManagedObjectContext) -> Temple {
+        let temple = Temple(context: context)
+        temple.id = UUID().description
+        temple.date = Date()
+        return temple
+    }
+}

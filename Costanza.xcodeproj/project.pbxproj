@@ -87,6 +87,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F01AE2B324260E5800AF6AD6 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				F070FBAD2424F9A900E6C666 /* CreateView.swift */,
+				F01AE2B124250F6E00AF6AD6 /* CreateViewModel.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		F01AE2B424260E6600AF6AD6 /* Temple */ = {
+			isa = PBXGroup;
+			children = (
+				F070FBA52424F0C900E6C666 /* TempleView.swift */,
+				F070FBA72424F30800E6C666 /* TempleViewModel.swift */,
+			);
+			path = Temple;
+			sourceTree = "<group>";
+		};
 		F04B9008241FAE8500B2BAAA = {
 			isa = PBXGroup;
 			children = (
@@ -214,10 +232,8 @@
 		F070FBAB2424F81100E6C666 /* Initial */ = {
 			isa = PBXGroup;
 			children = (
-				F070FBAD2424F9A900E6C666 /* CreateView.swift */,
-				F01AE2B124250F6E00AF6AD6 /* CreateViewModel.swift */,
-				F070FBA52424F0C900E6C666 /* TempleView.swift */,
-				F070FBA72424F30800E6C666 /* TempleViewModel.swift */,
+				F01AE2B324260E5800AF6AD6 /* Create */,
+				F01AE2B424260E6600AF6AD6 /* Temple */,
 			);
 			path = Initial;
 			sourceTree = "<group>";

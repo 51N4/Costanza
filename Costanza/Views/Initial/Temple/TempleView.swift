@@ -15,6 +15,7 @@ struct TempleView: View {
     var model: TempleViewModel
     @Binding var state: ContentViewStep
     @State private var isCreating = false
+    @State private var listID = 0
     
     @FetchRequest(
         entity: Temple.entity(),
@@ -26,21 +27,34 @@ struct TempleView: View {
             NavigationView {
                 List {
                     ForEach(temples){ temple in
-                        NavigationLink(destination: CreateView(model: CreateViewModel(temple: temple), state: self.$state)) {
+                        NavigationLink(destination: EmptyView()) {
                             TempleRow(temple: temple)
                         }
                     }.onDelete(perform: delete)
-                }.listStyle(GroupedListStyle())
-            }
-            if !isCreating {
-                HStack{
-                    Button(action: {
-                        self.model.create()
-                    }){
-                        Text("Add Temple")
+                        .onTapGesture {
+                            self.listID += 1
                     }
-                }.frame(height: 42)
+                }.listStyle(GroupedListStyle())
+                .id(listID)
             }
+           
+            HStack{
+                Button(action: {
+                    self.model.create()
+                    self.isCreating.toggle()
+                }){
+                    Text("Add Temple")
+                }.sheet(isPresented: $isCreating) {
+                    CreateView(model:
+                        CreateViewModel(temple: self.model.current),
+                               isCreating: self.$isCreating,
+                               refresh: self.$listID)
+                   
+                }
+            }.frame(height: 42.0)
+            .padding()
+        }.onAppear(){
+            print("SSS")
         }
     }
     

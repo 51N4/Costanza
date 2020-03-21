@@ -12,17 +12,20 @@ import SwiftUI
 struct CreateView: View {
     
     @ObservedObject var model: CreateViewModel
-    @Binding var state: ContentViewStep
-
+    @Binding var isCreating: Bool
+    @Binding var refresh: Int
     @State private var name:String = ""
+    
     
     var body: some View {
         VStack{
-            Text("No name")
+            Text(model.temple == nil ? "Error creating Temple" : "No name")
             TextField("Temple Name", text: $name)
             if name.count > 0 {
                 Button(action: {
-                    self.model.save()
+                    self.model.addName(name: self.name)
+                    self.isCreating.toggle()
+                    self.refresh += 1
                 }){
                     Text("Set Temple Name")
                 }

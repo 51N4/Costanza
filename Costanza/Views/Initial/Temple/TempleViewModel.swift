@@ -15,21 +15,16 @@ class TempleViewModel:StorableViewModel, ObservableObject {
     
     var context: NSManagedObjectContext
 
+    private (set) var current: Temple?
+    
     init( context: NSManagedObjectContext) {
         self.context = context
     }
     
-    @discardableResult
-    func create() -> Temple {
-        let temple = Temple(context: context)
-        temple.id = UUID().description
-        temple.date = Date()
-        return temple
+    func create() {
+        current = Temple.create(context: context)
     }
     
-    func addName(name:String, item: Temple) {
-        item.setValue(name, forKey: "name")
-    }
     
     func addDescription(description:String, item: Temple) {
         item.setValue(description, forKey: "desc")
@@ -48,7 +43,10 @@ class TempleViewModel:StorableViewModel, ObservableObject {
     }
     
     func save() {
-        try? context.save()
+        do {
+            try context.save()
+        } catch {
+            print(error)
+        }
     }
-
 }

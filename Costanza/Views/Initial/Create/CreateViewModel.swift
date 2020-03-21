@@ -10,13 +10,22 @@ import Foundation
 
 class CreateViewModel: ViewModel, ObservableObject {
     
-    var temple: Temple
+    var temple: Temple?
     
-    init(temple:Temple) {
+    init(temple:Temple?) {
         self.temple = temple
     }
     
+    func addName(name:String) {
+        temple?.setValue(name, forKey: "name")
+        save()
+    }
+    
     func save() {
-        print("SAVE")
+        do {
+            try temple?.context?.save()
+        } catch {
+            print(error)
+        }
     }
 }

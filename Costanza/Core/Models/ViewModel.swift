@@ -15,7 +15,8 @@ public protocol ViewModel {}
 public protocol StorableViewModel: ViewModel {
     associatedtype T : NSManagedObject
     var context: NSManagedObjectContext { get }
-    func create() -> T
+    var current: T? { get }
+    func create()
     func delete(offsets:IndexSet,
                 items: FetchedResults<T>)
     func save()
