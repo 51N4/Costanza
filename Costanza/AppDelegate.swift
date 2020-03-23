@@ -9,6 +9,11 @@
 import UIKit
 import CoreData
 
+
+
+// NOTE
+// https://stackoverflow.com/questions/59061298/cant-select-same-row-twice-in-swiftui
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

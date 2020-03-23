@@ -31,9 +31,6 @@ struct TempleView: View {
                             TempleRow(temple: temple)
                         }
                     }.onDelete(perform: delete)
-                        .onTapGesture {
-                            self.listID += 1
-                    }
                 }.listStyle(GroupedListStyle())
                 .id(listID)
             }
@@ -54,7 +51,7 @@ struct TempleView: View {
             }.frame(height: 42.0)
             .padding()
         }.onAppear(){
-            print("SSS")
+            print(self.temples.count)
         }
     }
     
